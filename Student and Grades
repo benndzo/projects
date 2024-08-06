@@ -1,0 +1,26 @@
+ucenik = input("Ime na Ucenikot: ")
+a = int(input("ocena za Matematika: "))
+b = int(input("ocena za Fizika: "))
+c = int(input("ocena za Hemija: "))
+d = int(input("ocena za Sport: "))
+e = int(input("ocena za Geografija: "))
+oceni=[a,b,c,d,e]
+suma=sum(oceni)
+print(suma)
+
+prosek= suma/5
+print(prosek)
+if prosek >= 4.5:
+    ocena = "Odlicen"
+elif prosek <= 4.5 and prosek >= 3.5:
+    ocena = "Mnogu Dobar"
+elif prosek <=3.5 and prosek >= 2.5:
+    ocena = "Dobar"
+elif prosek <= 2.5 and prosek >= 1.5:
+    ocena = "Dovolen"
+elif prosek <=1.5:
+    ocena = ("Nedovolen")
+else:
+    print("Vnesovte pogresni oceni")
+
+print(f"Ucenikot {ucenik} ima prosek od {prosek} i e {ocena} ucenik")
